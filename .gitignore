@@ -3,5 +3,6 @@ product
 images
 bower_components
 forperfectpixel
+package-lock.json
 *.psd
 .idea/
