@@ -4,3 +4,4 @@ images
 bower_components
 *.psd
 .idea/
+package-lock.json
