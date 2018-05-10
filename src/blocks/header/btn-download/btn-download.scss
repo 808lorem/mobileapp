@@ -1,0 +1,22 @@
+.btn-download {
+	background: #10d1ad;
+	padding: 6.5px 38px 6.5px 22px;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 10px;
+	&__icon {
+		color: #ffffff;
+		font-size: 2.25em;
+		margin-right: 17px;
+		padding-top: 2px;
+	}
+	&__text {
+		font-family: OpenSansRegular, Arial, sans-serif;
+		color: #ffffff;
+		font-size: 1.25em;
+		font-weight: 600;
+		letter-spacing: 0.3px;
+		vertical-align: -3px;
+	}
+}

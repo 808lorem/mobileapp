@@ -1,0 +1,8 @@
+mixin client(key)
+    .slide__client
+        .slide__client-info
+            img(src="img/" + key.name + ".jpg" alt=""+ key.name).slide__client-photo
+            h3.slide__client-name= key.name
+            span.slide__client-post= key.post
+        .slide__client-comment
+            p.slide__client-text= key.text

@@ -1,0 +1,6 @@
+include team-member__base
+include team-member__mixin
+
+.team-member
+    for key in data
+        +team-member(key)
