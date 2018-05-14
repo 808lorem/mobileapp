@@ -1,0 +1,43 @@
+.features-item {
+	@include row-flex;
+	flex-wrap: inherit;
+	justify-content: space-between;
+	margin-bottom: 97px;
+	@include sm-block {
+		flex-direction: column;
+		margin-bottom: 40px;
+		align-items: center;
+	}
+	&__block-icon {
+		margin-right: 43px;
+		@include sm-block {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+	}
+	&__icon {
+		font-size: 36px;
+		color: #1ab798;
+	}
+	&__block {
+		margin-top: 4px;
+	}
+	&__title {
+		font-family: RalewayBold, sans-serif;
+		color:  #282528;
+		font-size: 18px;
+		margin-bottom: 12px;
+		@include sm-block {
+			text-align: center;
+		}
+	}
+	&__text {
+		font-family: OpenSansRegular, Arial, sans-serif;
+		color:  #282528;
+		font-size: 13px;
+		line-height: 24px;
+		@include sm-block {
+			text-align: center;
+		}
+	}
+}

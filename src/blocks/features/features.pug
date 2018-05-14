@@ -1,0 +1,14 @@
+include features-item/features-item
+section.features
+	include ../title/title
+	p.features__desc Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
+	.features__row
+		.features__column
+			+featuresItem(icons[a], a++)
+			+featuresItem(icons[a], a++)
+			+featuresItem(icons[a], a++)
+		img(src="img/iphone.png" alt="iphone").features__img
+		.features__column
+			+featuresItem(icons[a], a++)
+			+featuresItem(icons[a], a++)
+			+featuresItem(icons[a], a++)

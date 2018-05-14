@@ -1,0 +1,29 @@
+.features__row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.features__row::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.features__column {
+  float: left;
+}
+
+.features__img {
+  float: left;
+}
+
+.features-item {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.features-item::after {
+  display: block;
+  content: "";
+  clear: both;
+}

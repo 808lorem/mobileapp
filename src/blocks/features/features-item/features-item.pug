@@ -1,0 +1,18 @@
+- var a = 0;
+-
+	var icons = [
+	'user',
+	'map',
+	'like',
+	'music',
+	'click',
+	'navigation'
+	];
+
+mixin featuresItem(icon)
+	.features-item
+		.features-item__block-icon
+			+svg(icon, 'features-item__icon')
+		.features-item__block
+			h4.features-item__title Amet varius
+			p.features-item__text Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada
