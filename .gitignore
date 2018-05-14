@@ -2,6 +2,11 @@ node_modules
 product
 images
 bower_components
+forperfectpixel
+package-lock.json
 *.psd
 .idea/
+<<<<<<< HEAD
 package-lock.json
+=======
+>>>>>>> video

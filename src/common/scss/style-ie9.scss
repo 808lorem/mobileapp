@@ -1,0 +1,17 @@
+// Миксины SmartGrid
+@import 'mixins/smart-grid';
+
+.features {
+	&__row {
+		@include row-float;
+	}
+	&__column {
+		@include col-float;
+	}
+	&__img {
+		@include col-float;
+	}
+	&-item {
+		@include row-float;
+	}
+}

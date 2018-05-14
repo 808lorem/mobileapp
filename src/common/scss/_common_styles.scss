@@ -1,3 +1,8 @@
+// Показать сетку
+.debug {
+	@include debug(rgba(0, 0, 0, 0.2), 1px solid rgba(253, 255, 186, 0.5));
+}
+
 noscript { // Если JS не включен у пользователя
 	font-size: 20px;
 	text-align: center;

@@ -1,0 +1,36 @@
+.description {
+	@include wrapper;
+	color:  #ffffff;
+	padding-top: 169px;
+	&__title {
+		font-family: RalewayBold, sans-serif;
+		font-size: 42px;
+		margin-bottom: 3px;
+	}
+	&__undertitle {
+		font-family: OpenSansSemibold, sans-serif;
+		font-size: 22px;
+	}
+	&__list {
+		margin: 37px 0 69px 22px;
+	}
+	&__item {
+		position: relative;
+		font-family: OpenSansRegular, Arial, sans-serif;
+		font-size: 16px;
+		line-height: 36px;
+		&:before {
+			content: '';
+			display: block;
+			background: url("../img/pe-7s-angle-right.svg") no-repeat;
+			width: 7px;
+			height: 12px;
+			position: absolute;
+			left: -22px;
+			top: 55%;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+@import "../btn-download/btn-download";

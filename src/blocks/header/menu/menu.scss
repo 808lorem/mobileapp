@@ -1,0 +1,19 @@
+.menu {
+	margin-right: -5px;
+	margin-top: 1px;
+	&__item {
+		font-family: OpenSansBold, Arial, sans-serif;
+		color: rgb(127, 125, 127);
+		font-size: 0.813em;
+		line-height: 2.769;
+		text-align: left;
+		text-transform: uppercase;
+		margin-left: 39px;
+		&:hover {
+			color:  #282528;
+		}
+		&.action {
+			color:  #282528;
+		}
+	}
+}

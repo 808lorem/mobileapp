@@ -1,0 +1,78 @@
+.slide {
+	&__client {
+		text-align: center;
+		&-photo {
+			border-radius: 50%;
+			border: 2px solid #c4c7c7;
+			width: 100px;
+			height: 100px;
+			object-fit: none;
+			object-position: top;
+			margin: 0 auto 27px;
+		}
+		&-name {
+			font-family: OpenSansSemibold, Arial, sans-serif;
+			color:  #062033;
+			font-size: 1.125em;
+			margin-bottom: 2px;
+		}
+		&-post {
+			font-family: OpenSansSemibold, Arial, sans-serif;
+			color:  #646464;
+			font-size: 0.813em;
+			letter-spacing: 0.5px;
+		}
+		&-comment {
+			margin: 101px auto 37px;
+			width: 936px;
+		}
+		&-text {
+			font-family: OpenSansRegular, Arial, sans-serif;
+			color:  #282528;
+			font-size: 1.125em;
+			line-height: 2;
+			display: inline;
+			position: relative;
+			&:before {
+				content: '“';
+				display: block;
+				position: absolute;
+				font-family: Georgia, Arial, sans-serif;
+				color:  #efefef;
+				font-size: 8.375em;
+				top: -111px;
+				left: -60px;
+			}
+		}
+	}
+}
+
+.slick-dots {
+	li {
+		margin: 0px -1px;
+		&.slick-active {
+			button {
+				&:before {
+					color: #1ab798;
+					opacity: 1;
+				}
+				&:hover {
+					&:before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		button {
+			&:before {
+				font-size: 11px;
+			}
+			&:hover {
+				&:before {
+					color: #1ab798;
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+}
