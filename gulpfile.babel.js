@@ -85,8 +85,8 @@ gulp.task('sass', () => {
 			browsers: ['last 2 versions'],
 			cascade: true
 		}))
-		.pipe(gulp.dest('dist/css'))
 		.pipe(gcmq())
+		.pipe(gulp.dest('dist/css'))
 		.pipe(sync.stream());
 		syncReload();
 	}
@@ -144,6 +144,7 @@ gulp.task('js:lib', () => {
 gulp.task('js:allconcat', () => {
 	let mask = [
 		'src/common/js/all/jquery.min.js',
+		'src/common/js/all/svg4everybody.min.js',
 		'src/common/js/all/libs.js',
 		'src/common/js/all/main.js'
 	];
@@ -303,8 +304,13 @@ gulp.task('move', () => {
 	gulp.src('dist/*.html')
 		.pipe(plugin.htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest('product'));
-	gulp.src('dist/js/*.js')
-		.pipe(plugin.uglify())
+	gulp.src('dist/js/main.js')
+		.pipe(plugin.minify({
+			ext: {
+				min:'.js'
+			},
+			noSource: true
+		}))
 		.pipe(gulp.dest('product/js'));
 	gulp.src('dist/sprite/*.{png,svg}')
 		.pipe(gulp.dest('product/sprite'));

@@ -1,24 +1,55 @@
 .description {
-	@include wrapper;
 	color:  #ffffff;
 	padding-top: 169px;
+	width: 100%;
+	@include md-block {
+		padding-top: 80px;
+	}
 	&__title {
 		font-family: RalewayBold, sans-serif;
-		font-size: 42px;
+		font-size: 2.625rem;
 		margin-bottom: 3px;
+		@include md-block {
+			text-align: center;
+		}
 	}
 	&__undertitle {
 		font-family: OpenSansSemibold, sans-serif;
 		font-size: 22px;
+		@include md-block {
+			text-align: center;
+			display: block;
+		}
+	}
+
+	&__block {
+		@include md-block {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-top: 20px;
+		}
+		@include sm-block {
+			flex-direction: column;
+		}
 	}
 	&__list {
 		margin: 37px 0 69px 22px;
+		@include md-block {
+			margin: 0;
+		}
+		@include md-block {
+			margin-bottom: 20px;
+		}
 	}
 	&__item {
 		position: relative;
 		font-family: OpenSansRegular, Arial, sans-serif;
 		font-size: 16px;
 		line-height: 36px;
+		@include sm-block {
+			font-size: 13px;
+		}
 		&:before {
 			content: '';
 			display: block;
@@ -33,4 +64,4 @@
 	}
 }
 
-@import "../btn-download/btn-download";
+@import "btn-download/btn-download";

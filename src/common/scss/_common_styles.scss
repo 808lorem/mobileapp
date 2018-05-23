@@ -16,6 +16,9 @@ noscript { // Если JS не включен у пользователя
 html {
 	line-height: 1;
 	font-size: 16px;
+	@include sm-block {
+		font-size: 14px;
+	}
 }
 
 body {
@@ -118,4 +121,10 @@ button {
 }
 *:-ms-input-placeholder {
 	@include placeholder;
+}
+
+.wrapper {
+	max-width: 1589px;
+	margin: 0 auto;
+	overflow: hidden;
 }

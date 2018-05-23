@@ -1,0 +1,20 @@
+.team {
+	padding-top: 94px;
+	&__wrapper {
+		@include wrapper;
+	}
+	&__row {
+		@include row-flex;
+		flex-direction: column;
+	}
+	&__desc {
+		text-align: center;
+		margin: 41px auto 40px;
+		font-family: OpenSansSemibold, Arial, sans-serif;
+		color: rgba(6, 32, 51, 0.8);
+		line-height: 1.5;
+		max-width: 965px;
+	}
+}
+
+@import "team-member/team-member";

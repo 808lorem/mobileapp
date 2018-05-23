@@ -1,0 +1,7 @@
+.comments {
+	padding-top: 139px;
+	&__wrapper {
+		@include wrapper;
+	}
+}
+@import "slide/slide";

@@ -1,0 +1,121 @@
+.team-member {
+	@include row-flex;
+	&__column {
+		position: relative;
+		text-align: center;
+		@include col;
+		@include size(3);
+		@include size-md(6);
+		@include md-block {
+			margin-bottom: 20px;
+		}
+		@include size-xs(12);
+	}
+	&__img-block {
+		position: relative;
+		overflow: hidden;
+		&:hover .team-member__info {
+			opacity: 1;
+		}
+		&:hover .team-member__photo {
+			transform: scale(1.1);
+		}
+	}
+	&__photo {
+		width: 100%;
+		height: 300px;
+		transition: all 0.2s linear;
+		object-fit: cover;
+		object-position: top;
+	}
+	&__info {
+		transition: all 0.2s linear;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		background-color:  rgba(14, 180, 147, 0.85);
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 18px 26px;
+	}
+
+	&__title {
+		font-family: OpenSansBold, Arial, sans-serif;
+		color:  #ffffff;
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: center;
+		margin-bottom: 8px;
+		letter-spacing: 0.4px;
+		cursor: default;
+		@include lg-block {
+			font-size: 14px;
+		}
+	}
+	&__text {
+		font-family: OpenSansRegular, Arial, sans-serif;
+		color:  #ffffff;
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: center;
+		height: 161px;
+		letter-spacing: 0.5px;
+		cursor: default;
+		@include lg-block {
+			font-size: 14px;
+		}
+	}
+
+	&__soc {
+		text-align: center;
+		&-link {
+			display: inline-block;
+			background-color:  rgba(0, 0, 0, 0.3);
+			width: 42px;
+			height: 42px;
+			position: relative;
+			margin: 0 2px;
+			transition: all 0.2s linear;
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+			&:hover .team-member__icon {
+				&.svg_twitter {
+					color: rgb(0, 172, 237);
+				}
+				&.svg_facebook {
+					color: rgb(59, 89, 152);
+				}
+				&.svg_google-plus {
+					color: rgb(221, 75, 57);
+				}
+			}
+	}
+
+	}
+	&__icon {
+		color: white;
+		font-size: 1.5em;
+		line-height: 1.25;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: all 0.2s linear;
+	}
+	&__name {
+		font-family: OpenSansSemibold, Arial, sans-serif;
+		color:  rgba(6, 32, 51, 0.8);
+		font-size: 18px;
+		line-height: 1.333;
+		margin: 14px 0 4px;
+	}
+	&__post {
+		font-family: OpenSansRegular, Arial, sans-serif;
+		color:  rgba(6, 32, 51, 0.8);
+		font-size: 13px;
+		line-height: 1.846;
+		display: block;
+	}
+}

@@ -1,20 +1,19 @@
 extends ../common/pug/layout/main
 
 block title
-	| Главная страница
+	| Mobileapp
 
 block mixin
 	include  ../common/pug/mixins/mixin-svg
 	include ../common/pug/mixins/debug
+	include ../blocks/title/titles-data-mixin
 
 block content
 	include ../blocks/header/header
-	//include ../blocks/title/var-and-mixin-title
-	//include ../blocks/title/title
-	//include ../blocks/title/title
-	//include ../blocks/title/title
-	//include ../blocks/title/title
-	//include ../blocks/team-member/team-member
-	//include ../blocks/contact-form/contact-form
-	//include ../blocks/slide/slide
+	include ../blocks/features/features
+	include ../blocks/video/video
+	include ../blocks/team/team
+	include ../blocks/comments/comments
+	include ../blocks/footer/footer
+
 

@@ -1,0 +1,60 @@
+.contacts {
+	color:  #ffffff;
+	@include xs-block {
+		text-align: center;
+	}
+	&__title {
+		font-family: RalewayRegular, sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		margin-bottom: 16px;
+	}
+	&__text {
+		font-family: OpenSansRegular, Arial, sans-serif;
+		font-size: 14px;
+		line-height: 21px;
+		font-weight: 400;
+		margin-bottom: 40px;
+	}
+	&__social {
+		display: flex;
+		margin-bottom: 29px;
+		@include xs-block {
+			justify-content: center;
+		}
+		&__btn {
+			border-radius: 50%;
+			width: 42px;
+			height: 42px;
+			position: relative;
+			margin-right: 15px;
+			@include xs-block {
+				margin: 0 8px;
+			}
+			&.facebook {
+				background-color:  #3b5997;
+			}
+			&.twitter {
+				background-color:  #3ec2f3;
+			}
+			&.googleplus {
+				background-color:  #e44c41;
+			}
+		}
+		&__icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color:  #ffffff;
+			font-size: 23px;
+		}
+	}
+	&__link {
+		font-family: OpenSansRegular, Arial, sans-serif;
+		color:  #bface2;
+		font-size: 14px;
+		display: block;
+		margin-bottom: 14px;
+	}
+}

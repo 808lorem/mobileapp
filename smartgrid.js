@@ -12,9 +12,9 @@ let settings = {
 		fields: '55px' /* side fields */
 	},
 	breakPoints: {
-		// lg: {
-		// 	width: '1200px' /* -> @media (max-width: 1100px) */
-		// },
+		lg: {
+			width: '1200px' /* -> @media (max-width: 1100px) */
+		},
 		md: {
 			width: '992px'
 		},

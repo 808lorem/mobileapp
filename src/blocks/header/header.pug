@@ -1,9 +1,11 @@
-//+debug(12)
-header.header
+#home
+header.header#header
 	.header__wrapper
-		.header__row
+		.header__row.header__row__top#headerMenu
 			include logo/logo
 			include menu/menu
+		include menu/menu-sm
+		.header__row.header__row__bottom
+			include description/description
 		img(src="img/iphone.png" alt="iphone").header__img
 		img(src="img/iphone.png" alt="iphone").header__img.header__img_min
-	include description/description

@@ -1,0 +1,16 @@
+mixin team-member(key)
+	.team-member__column
+		.team-member__img-block
+			img(src="img/" + key.post + ".jpg" alt="Jell").team-member__photo#teamMemberPhoto
+			.team-member__info
+				h3.team-member__title= key.title
+				p.team-member__text= key.text
+				.team-member__soc
+					a(href="#").team-member__soc-link
+						+svg("twitter", "team-member__icon")
+					a(href="#").team-member__soc-link
+						+svg("facebook", "team-member__icon")
+					a(href="#").team-member__soc-link
+						+svg("google-plus", "team-member__icon")
+		h3.team-member__name= key.name
+		span.team-member__post= key.post

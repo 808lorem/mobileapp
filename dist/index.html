@@ -6,52 +6,365 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-<<<<<<< HEAD
-    <script src="js/main.js"></script>
-=======
     <script src="js/main.js" defer></script>
->>>>>>> video
-    <title>Главная страница
+    <title>Mobileapp
     </title>
   </head>
   <body>
     <noscript>Please, include JavaScript (Пожалуйста, включите JavaScript)</noscript>
-<<<<<<< HEAD
-    <div class="wrapper">
-=======
     <!-- Grid-->
     <!-- column 12 | 24-->
     <div class="wrapper">
-      <!--+debug(12)-->
-      <header class="header">
+      <div id="home"></div>
+      <header class="header" id="header">
         <div class="header__wrapper">
-          <div class="header__row"><span class="logo">Mobileapp</span>
-            <nav class="menu"><a class="menu__item action" href="#">Home</a><a class="menu__item" href="#">Features</a><a class="menu__item" href="#">Team</a><a class="menu__item" href="#">Testimonials</a><a class="menu__item" href="#">Contact</a></nav>
+          <div class="header__row header__row__top" id="headerMenu"><a class="logo" href="#home">Mobileapp</a>
+            <div class="menu">
+              <button class="menu__btn" id="menuBtn">Menu</button>
+              <nav class="menu__nav">
+                <div class="menu__list" id="menuList"><a class="menu__item active" href="#home">Home</a><a class="menu__item" href="#features">Features</a><a class="menu__item" href="#team">Team</a><a class="menu__item" href="#testimonials">Testimonials</a><a class="menu__item" href="#contact">Contact</a></div>
+              </nav>
+            </div>
+          </div>
+          <div class="menu-sm">
+            <nav class="menu-sm__nav" id="menuNav">
+              <button class="menu-sm__close" id="menuClose">
+                    <svg class="svg svg_cross menu-sm__close__icon">
+                      <use xlink:href="sprite/sprite.svg#cross"></use>
+                    </svg>
+              </button>
+              <div class="menu__list" id="menuSmList"><a class="menu__item active" href="#home">Home</a><a class="menu__item" href="#features">Features</a><a class="menu__item" href="#team">Team</a><a class="menu__item" href="#testimonials">Testimonials</a><a class="menu__item" href="#contact">Contact</a></div>
+            </nav>
+          </div>
+          <div class="header__row header__row__bottom">
+            <section class="description">
+              <h1 class="description__title">Introducing Mobileapp.</h1><span class="description__undertitle">Maecenas vitae tellus sapien. Praesent</span>
+              <div class="description__block">
+                <ul class="description__list">
+                  <li class="description__item">semper scelerisque tristique a enim</li>
+                  <li class="description__item">Integer ut mattis nulla, eget vehicula elit</li>
+                  <li class="description__item">Praesent rutrum ac nunc et</li>
+                </ul>
+                <div class="btn-download">
+                      <svg class="svg svg_btn-downloand btn-download__icon">
+                        <use xlink:href="sprite/sprite.svg#btn-downloand"></use>
+                      </svg><span class="btn-download__text">Download</span>
+                </div>
+              </div>
+            </section>
           </div><img class="header__img" src="img/iphone.png" alt="iphone"><img class="header__img header__img_min" src="img/iphone.png" alt="iphone">
         </div>
-        <section class="description">
-          <h1 class="description__title">Introducing Mobileapp.</h1><span class="description__undertitle">Maecenas vitae tellus sapien. Praesent</span>
-          <ul class="description__list">
-            <li class="description__item">semper scelerisque tristique a enim</li>
-            <li class="description__item">Integer ut mattis nulla, eget vehicula elit</li>
-            <li class="description__item">Praesent rutrum ac nunc et</li>
-          </ul>
-          <div class="btn-download">
-                <svg class="svg svg_btn-downloand btn-download__icon">
-                  <use xlink:href="sprite/sprite.svg#btn-downloand"></use>
-                </svg><span class="btn-download__text">Download</span>
-          </div>
-        </section>
       </header>
-      <!--include ../blocks/title/var-and-mixin-title-->
-      <!--include ../blocks/title/title-->
-      <!--include ../blocks/title/title-->
-      <!--include ../blocks/title/title-->
-      <!--include ../blocks/title/title-->
-      <!--include ../blocks/team-member/team-member-->
-      <!--include ../blocks/contact-form/contact-form-->
-      <!--include ../blocks/slide/slide-->
->>>>>>> video
+      <div id="features"></div>
+      <section class="features">
+            <div class="title">
+              <div class="title__block">
+                <h2 class="title__text">KEY FEATURES
+                  <div class="title__under-line-box">
+                    <div class="title__under-line title__under-line_left"></div>
+                    <div class="title__under-line title__under-line_right"></div>
+                  </div>
+                </h2>
+              </div>
+            </div>
+        <p class="features__desc">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
+        <div class="features__row">
+          <div class="features__column">
+                  <div class="features-item">
+                    <div class="features-item__block-icon">
+                          <svg class="svg svg_user features-item__icon">
+                            <use xlink:href="sprite/sprite.svg#user"></use>
+                          </svg>
+                    </div>
+                    <div class="features-item__block">
+                      <h4 class="features-item__title">Amet varius</h4>
+                      <p class="features-item__text">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada</p>
+                    </div>
+                  </div>
+                  <div class="features-item">
+                    <div class="features-item__block-icon">
+                          <svg class="svg svg_map features-item__icon">
+                            <use xlink:href="sprite/sprite.svg#map"></use>
+                          </svg>
+                    </div>
+                    <div class="features-item__block">
+                      <h4 class="features-item__title">Amet varius</h4>
+                      <p class="features-item__text">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada</p>
+                    </div>
+                  </div>
+                  <div class="features-item">
+                    <div class="features-item__block-icon">
+                          <svg class="svg svg_like features-item__icon">
+                            <use xlink:href="sprite/sprite.svg#like"></use>
+                          </svg>
+                    </div>
+                    <div class="features-item__block">
+                      <h4 class="features-item__title">Amet varius</h4>
+                      <p class="features-item__text">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada</p>
+                    </div>
+                  </div>
+          </div><img class="features__img" src="img/iphone.png" alt="iphone">
+          <div class="features__column">
+                  <div class="features-item">
+                    <div class="features-item__block-icon">
+                          <svg class="svg svg_music features-item__icon">
+                            <use xlink:href="sprite/sprite.svg#music"></use>
+                          </svg>
+                    </div>
+                    <div class="features-item__block">
+                      <h4 class="features-item__title">Amet varius</h4>
+                      <p class="features-item__text">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada</p>
+                    </div>
+                  </div>
+                  <div class="features-item">
+                    <div class="features-item__block-icon">
+                          <svg class="svg svg_click features-item__icon">
+                            <use xlink:href="sprite/sprite.svg#click"></use>
+                          </svg>
+                    </div>
+                    <div class="features-item__block">
+                      <h4 class="features-item__title">Amet varius</h4>
+                      <p class="features-item__text">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada</p>
+                    </div>
+                  </div>
+                  <div class="features-item">
+                    <div class="features-item__block-icon">
+                          <svg class="svg svg_navigation features-item__icon">
+                            <use xlink:href="sprite/sprite.svg#navigation"></use>
+                          </svg>
+                    </div>
+                    <div class="features-item__block">
+                      <h4 class="features-item__title">Amet varius</h4>
+                      <p class="features-item__text">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus diam a iaculis malesuada</p>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="video__wrapper">
+          <div class="video__row">
+            <div class="video__column">
+              <h2 class="video__title">Watch the video</h2>
+              <p class="video__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+              <div class="video__social"><a class="video__social__btn" href="#">
+                      <svg class="svg svg_appleinc video__social__icon">
+                        <use xlink:href="sprite/sprite.svg#appleinc"></use>
+                      </svg></a><a class="video__social__btn" href="#">
+                      <svg class="svg svg_android video__social__icon">
+                        <use xlink:href="sprite/sprite.svg#android"></use>
+                      </svg></a><a class="video__social__btn" href="#">
+                      <svg class="svg svg_windows8 video__social__icon">
+                        <use xlink:href="sprite/sprite.svg#windows8"></use>
+                      </svg></a></div>
+            </div>
+            <div class="video__column">
+              <div class="video__relation">
+                <div class="video__ration">
+                  <iframe class="video__content" src="https://player.vimeo.com/video/49780741" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="team"></div>
+      <section class="team">
+        <div class="team__wrapper">
+          <div class="team__row">
+                <div class="title">
+                  <div class="title__block">
+                    <h2 class="title__text">Our Team
+                      <div class="title__under-line-box">
+                        <div class="title__under-line title__under-line_left"></div>
+                        <div class="title__under-line title__under-line_right"></div>
+                      </div>
+                    </h2>
+                  </div>
+                </div>
+            <p class="team__desc">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
+          </div>
+          <div class="team-member">
+                      <div class="team-member__column">
+                        <div class="team-member__img-block"><img class="team-member__photo" src="img/Managing Director.jpg" alt="Jell" id="teamMemberPhoto">
+                          <div class="team-member__info">
+                            <h3 class="team-member__title">Aenean ut suscipit urna. Donec efficitur</h3>
+                            <p class="team-member__text">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                            <div class="team-member__soc"><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_twitter team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#twitter"></use>
+                                    </svg></a><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_facebook team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#facebook"></use>
+                                    </svg></a><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_google-plus team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#google-plus"></use>
+                                    </svg></a></div>
+                          </div>
+                        </div>
+                        <h3 class="team-member__name">Jon Doe</h3><span class="team-member__post">Managing Director</span>
+                      </div>
+                      <div class="team-member__column">
+                        <div class="team-member__img-block"><img class="team-member__photo" src="img/Lead Designer.jpg" alt="Jell" id="teamMemberPhoto">
+                          <div class="team-member__info">
+                            <h3 class="team-member__title">Aenean ut suscipit urna. Donec efficitur</h3>
+                            <p class="team-member__text">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                            <div class="team-member__soc"><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_twitter team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#twitter"></use>
+                                    </svg></a><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_facebook team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#facebook"></use>
+                                    </svg></a><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_google-plus team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#google-plus"></use>
+                                    </svg></a></div>
+                          </div>
+                        </div>
+                        <h3 class="team-member__name">Jon Doe</h3><span class="team-member__post">Lead Designer</span>
+                      </div>
+                      <div class="team-member__column">
+                        <div class="team-member__img-block"><img class="team-member__photo" src="img/Lead Developer.jpg" alt="Jell" id="teamMemberPhoto">
+                          <div class="team-member__info">
+                            <h3 class="team-member__title">Aenean ut suscipit urna. Donec efficitur</h3>
+                            <p class="team-member__text">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                            <div class="team-member__soc"><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_twitter team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#twitter"></use>
+                                    </svg></a><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_facebook team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#facebook"></use>
+                                    </svg></a><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_google-plus team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#google-plus"></use>
+                                    </svg></a></div>
+                          </div>
+                        </div>
+                        <h3 class="team-member__name">Jon Doe</h3><span class="team-member__post">Lead Developer</span>
+                      </div>
+                      <div class="team-member__column">
+                        <div class="team-member__img-block"><img class="team-member__photo" src="img/Sr. UI Designer.jpg" alt="Jell" id="teamMemberPhoto">
+                          <div class="team-member__info">
+                            <h3 class="team-member__title">Aenean ut suscipit urna. Donec efficitur</h3>
+                            <p class="team-member__text">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                            <div class="team-member__soc"><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_twitter team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#twitter"></use>
+                                    </svg></a><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_facebook team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#facebook"></use>
+                                    </svg></a><a class="team-member__soc-link" href="#">
+                                    <svg class="svg svg_google-plus team-member__icon">
+                                      <use xlink:href="sprite/sprite.svg#google-plus"></use>
+                                    </svg></a></div>
+                          </div>
+                        </div>
+                        <h3 class="team-member__name">Jon Doe</h3><span class="team-member__post">Sr. UI Designer</span>
+                      </div>
+          </div>
+        </div>
+      </section>
+      <section class="comments" id="testimonials">
+        <div class="comments__wrapper">
+              <div class="title">
+                <div class="title__block">
+                  <h2 class="title__text">What our customer's say
+                    <div class="title__under-line-box">
+                      <div class="title__under-line title__under-line_left"></div>
+                      <div class="title__under-line title__under-line_right"></div>
+                    </div>
+                  </h2>
+                </div>
+              </div>
+          <div class="slide">
+            <div id="slideSlick">
+                        <div class="slide__client">
+                          <div class="slide__client-info"><img class="slide__client-photo" src="img/Jon Doe.jpg" alt="Jon Doe">
+                            <h3 class="slide__client-name">Jon Doe</h3><span class="slide__client-post">Company Inc.</span>
+                          </div>
+                          <div class="slide__client-comment">
+                            <p class="slide__client-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id</p>
+                          </div>
+                        </div>
+                        <div class="slide__client">
+                          <div class="slide__client-info"><img class="slide__client-photo" src="img/Jon Doe.jpg" alt="Jon Doe">
+                            <h3 class="slide__client-name">Jon Doe</h3><span class="slide__client-post">Company Inc.</span>
+                          </div>
+                          <div class="slide__client-comment">
+                            <p class="slide__client-text">Lorem</p>
+                          </div>
+                        </div>
+                        <div class="slide__client">
+                          <div class="slide__client-info"><img class="slide__client-photo" src="img/Jon Doe.jpg" alt="Jon Doe">
+                            <h3 class="slide__client-name">Jon Doe</h3><span class="slide__client-post">Company Inc.</span>
+                          </div>
+                          <div class="slide__client-comment">
+                            <p class="slide__client-text">Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id</p>
+                          </div>
+                        </div>
+                        <div class="slide__client">
+                          <div class="slide__client-info"><img class="slide__client-photo" src="img/Jon Doe.jpg" alt="Jon Doe">
+                            <h3 class="slide__client-name">Jon Doe</h3><span class="slide__client-post">Company Inc.</span>
+                          </div>
+                          <div class="slide__client-comment">
+                            <p class="slide__client-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis.</p>
+                          </div>
+                        </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="contact"></div>
+      <footer class="footer">
+        <div class="footer__wrapper">
+              <div class="title">
+                <div class="title__block">
+                  <h2 class="title__text color">Contact Us
+                    <div class="title__under-line-box">
+                      <div class="title__under-line title__under-line_left"></div>
+                      <div class="title__under-line title__under-line_right"></div>
+                    </div>
+                  </h2>
+                </div>
+              </div>
+          <div class="footer__row footer__row__top">
+            <div class="footer__column footer__column__right">
+              <section class="contacts">
+                <h3 class="contacts__title">Get in touch with us</h3>
+                <p class="contacts__text">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla nulla sollicitudin tristique. standard dummy text ever since the 1500s,</p>
+                <div class="contacts__social"><a class="contacts__social__btn facebook" href="">
+                        <svg class="svg svg_facebook contacts__social__icon">
+                          <use xlink:href="sprite/sprite.svg#facebook"></use>
+                        </svg></a><a class="contacts__social__btn twitter" href="">
+                        <svg class="svg svg_twitter contacts__social__icon">
+                          <use xlink:href="sprite/sprite.svg#twitter"></use>
+                        </svg></a><a class="contacts__social__btn googleplus" href="">
+                        <svg class="svg svg_google-plus contacts__social__icon">
+                          <use xlink:href="sprite/sprite.svg#google-plus"></use>
+                        </svg></a></div><a class="contacts__link contacts__link__tel" href="tel:">+XX-XXXX - XXXX - XX</a><a class="contacts__link contacts__link__email" href="mailto:Businessname@gmail.com">Businessname@gmail.com</a>
+              </section>
+            </div>
+            <div class="footer__column">
+              <form class="contact-form" action="#" method="post">
+                <div class="contact-form__top-row">
+                  <input class="contact-form__frame contact-form__frame_margin" type="text" placeholder="Name" name="userName" data-form="contact" id="userName">
+                  <input class="contact-form__frame" type="email" placeholder="Email" name="userEmail" data-form="contact" id="userEmail">
+                </div>
+                <textarea class="contact-form__frame contact-form__frame_size" placeholder="Message" name="userMessage" data-form="contact" id="userMessage"></textarea>
+                <input class="contact-form__btn" type="submit" value="submit" id="submitForm">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__wrapper">
+            <div class="footer__row footer__row__bottom">
+              <p>&copy; 2003-2015 Business Name, All Rights Reserved</p>
+              <p>Designed by Colorpixels.net</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -1,0 +1,14 @@
+- var i = 0;
+- var val = ['KEY FEATURES', 'Our Team', "What our customer's say", 'Contact Us'];
+
+mixin titles(text, i, color)
+    if i == val.length - 1
+        - color = 'color'
+    else
+        - color = ''
+    .title
+        .title__block
+            h2.title__text(class=''+color)= text
+                .title__under-line-box
+                    .title__under-line.title__under-line_left
+                    .title__under-line.title__under-line_right
